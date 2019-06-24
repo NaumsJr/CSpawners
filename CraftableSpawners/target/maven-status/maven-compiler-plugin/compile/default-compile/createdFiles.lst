@@ -1,0 +1,7 @@
+online\cheesysocks\craftablespawners\CraftableSpawners.class
+online\cheesysocks\craftablespawners\items\CreateSpawners.class
+online\cheesysocks\craftablespawners\commands\CSpawnersCommands.class
+online\cheesysocks\craftablespawners\utils\Common.class
+online\cheesysocks\craftablespawners\utils\EventsClass.class
+online\cheesysocks\craftablespawners\spawnerRecipe\CowSpawner.class
+online\cheesysocks\craftablespawners\commands\SpawnerCommand.class
