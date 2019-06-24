@@ -28,10 +28,10 @@ public class CreateSpawners implements Listener{
 	
 	//private static ItemStack mobSpawner;
 	
-	public static ItemStack createSpawner(EntityType et) {
+	public static ItemStack createSpawner(EntityType et, String name) {
         ItemStack spawner = new ItemStack(Material.SPAWNER);
         ItemMeta meta = spawner.getItemMeta();
-        meta.setDisplayName(ChatColor.GOLD + "Cow" + ChatColor.DARK_GRAY + " Spawner");
+        meta.setDisplayName(name);
         BlockStateMeta blockStateMeta = (BlockStateMeta) meta;
         BlockState blockState = blockStateMeta.getBlockState();
         blockStateMeta.setBlockState(blockState);
