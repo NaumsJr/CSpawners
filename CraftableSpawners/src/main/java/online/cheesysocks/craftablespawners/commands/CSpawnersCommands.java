@@ -7,13 +7,11 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.defaults.BukkitCommand;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 import online.cheesysocks.craftablespawners.CraftableSpawners;
-import online.cheesysocks.craftablespawners.items.CreateSpawners;
 import online.cheesysocks.craftablespawners.utils.Common;
 
 

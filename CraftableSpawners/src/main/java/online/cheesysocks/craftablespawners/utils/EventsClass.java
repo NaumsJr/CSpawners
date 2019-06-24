@@ -17,6 +17,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 import online.cheesysocks.craftablespawners.CraftableSpawners;
+import online.cheesysocks.craftablespawners.items.CreateSpawners;
 
 public class EventsClass implements Listener {
 
@@ -27,10 +28,12 @@ public class EventsClass implements Listener {
 		final ItemStack hand = event.getItemInHand();
 		final Block block = event.getBlock();
 
-		if (block.getType() == Material.SPAWNER && hand != null && hand.getItemMeta().getDisplayName().equals(ChatColor.GOLD + "Cow" + ChatColor.DARK_GRAY + " Spawner")) {
+		if (block.getType() == Material.SPAWNER && hand != null && hand.getItemMeta().getDisplayName().endsWith(ChatColor.DARK_GRAY + " Spawner")) {
 			final CreatureSpawner state = (CreatureSpawner) block.getState();
 			
-			state.setSpawnedType(EntityType.COW);
+			CreatureSpawner creatureSpawner = (CreatureSpawner)state;
+			
+			state.setSpawnedType(creatureSpawner.getSpawnedType());
 		}
 	}
 }

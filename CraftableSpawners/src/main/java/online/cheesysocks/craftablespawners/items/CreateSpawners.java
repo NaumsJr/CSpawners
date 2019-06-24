@@ -26,9 +26,9 @@ public class CreateSpawners implements Listener{
         p.getInventory().addItem(spawner);
     }*/
 	
-	private static final ItemStack cowSpawner;
+	//private static ItemStack mobSpawner;
 	
-	static {
+	public static ItemStack createSpawner(EntityType et) {
         ItemStack spawner = new ItemStack(Material.SPAWNER);
         ItemMeta meta = spawner.getItemMeta();
         meta.setDisplayName(ChatColor.GOLD + "Cow" + ChatColor.DARK_GRAY + " Spawner");
@@ -36,14 +36,13 @@ public class CreateSpawners implements Listener{
         BlockState blockState = blockStateMeta.getBlockState();
         blockStateMeta.setBlockState(blockState);
         CreatureSpawner creatureSpawner = (CreatureSpawner)blockState;
-        creatureSpawner.setSpawnedType(EntityType.COW);
+		creatureSpawner.setSpawnedType(et);
         blockStateMeta.setBlockState(creatureSpawner);
         spawner.setItemMeta(meta);
-       // Player.getInventory().addItem(spawner);
-        cowSpawner = spawner;
+       return spawner;
     }
 	
-	public static ItemStack getCowSpawner() {
-		return cowSpawner;
-	}
+	/*public static ItemStack getCowSpawner() {
+		return mobSpawner;
+	}*/
 }
