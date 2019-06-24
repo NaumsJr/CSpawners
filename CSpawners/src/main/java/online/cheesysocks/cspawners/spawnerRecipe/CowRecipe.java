@@ -17,7 +17,7 @@ public class CowRecipe{
 	
 	public static void CowRecipes() {
 		NamespacedKey cowKey = new NamespacedKey(plugin, "cowSpawner_key");
-		ShapedRecipe cSR = new ShapedRecipe(cowKey, CreateSpawners.createSpawner(EntityType.COW));
+		ShapedRecipe cSR = new ShapedRecipe(cowKey, CreateSpawners.createSpawner(EntityType.COW, ChatColor.GOLD + "Cow" + ChatColor.DARK_GRAY + " Spawner"));
 		
 		boolean advancedCraftingEnabled = plugin.getConfig().getBoolean("Advanced Crafting");
 		
