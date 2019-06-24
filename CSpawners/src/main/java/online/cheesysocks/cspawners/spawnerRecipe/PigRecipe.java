@@ -17,7 +17,7 @@ public class PigRecipe{
 	
 	public static void PigRecipes() {
 		NamespacedKey pigKey = new NamespacedKey(plugin, "pigSpawner_key");
-		ShapedRecipe sR = new ShapedRecipe(pigKey, CreateSpawners.createSpawner(EntityType.PIG));
+		ShapedRecipe sR = new ShapedRecipe(pigKey, CreateSpawners.createSpawner(EntityType.PIG, ChatColor.GOLD + "Pig" + ChatColor.DARK_GRAY + " Spawner"));
 		
 		boolean advancedCraftingEnabled = plugin.getConfig().getBoolean("Advanced Crafting");
 		
