@@ -1,0 +1,4 @@
+name: CSpawners
+main: online.cheesysocks.cspawners.CraftableSpawners
+version: 1.0.00
+api-version: 1.13
