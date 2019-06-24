@@ -17,7 +17,7 @@ public class SheepRecipe{
 	
 	public static void SheepRecipes() {
 		NamespacedKey sheepKey = new NamespacedKey(plugin, "sheepSpawner_key");
-		ShapedRecipe sR = new ShapedRecipe(sheepKey, CreateSpawners.createSpawner(EntityType.SHEEP));
+		ShapedRecipe sR = new ShapedRecipe(sheepKey, CreateSpawners.createSpawner(EntityType.SHEEP, ChatColor.GOLD + "Sheep" + ChatColor.DARK_GRAY + " Spawner"));
 		
 		boolean advancedCraftingEnabled = plugin.getConfig().getBoolean("Advanced Crafting");
 		
