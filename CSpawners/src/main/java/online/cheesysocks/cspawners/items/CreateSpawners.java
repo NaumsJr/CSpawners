@@ -31,7 +31,7 @@ public class CreateSpawners implements Listener{
 	public static ItemStack createSpawner(EntityType et, String name) {
         ItemStack spawner = new ItemStack(Material.SPAWNER);
         ItemMeta meta = spawner.getItemMeta();
-        meta.setDisplayName(name);
+        meta.setDisplayName(ChatColor.YELLOW + name + ChatColor.DARK_GRAY + " Spawner");
         BlockStateMeta blockStateMeta = (BlockStateMeta) meta;
         BlockState blockState = blockStateMeta.getBlockState();
         blockStateMeta.setBlockState(blockState);
