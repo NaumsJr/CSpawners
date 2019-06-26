@@ -4,7 +4,11 @@ Enable Cow Recipe: true
 Enable Pig Recipe: true
 Enable Sheep Recipe: true
 Enable Chicken Recipe: true
+Enable Rabbit Recipe: true
+Enable Squid Recipe: true
 Enable Mooshroom Recipe: true
+Enable Donkey Recipe: true
+Enable Horse Recipe: true
 Enable Dolphin Recipe: true
 Enable Ocelot Recipe: true
 Enable Wolf Recipe: true
