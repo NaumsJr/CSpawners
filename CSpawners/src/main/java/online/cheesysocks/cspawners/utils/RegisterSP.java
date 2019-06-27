@@ -29,10 +29,22 @@ public class RegisterSP {
 		if(enableRCP.recipeEnabled("Zombie"))SpawnerRC.MobRecipes("zombieKey", EntityType.ZOMBIE, "Zombie", Material.ROTTEN_FLESH, Material.ROTTEN_FLESH, Material.ROTTEN_FLESH, Material.ROTTEN_FLESH, Material.ROTTEN_FLESH);
 		if(enableRCP.recipeEnabled("Zombie Pigman"))SpawnerRC.MobRecipes("zombiePigmanKey", EntityType.PIG_ZOMBIE, "Zombie Pigman", Material.ROTTEN_FLESH, Material.PORKCHOP, Material.ROTTEN_FLESH, Material.PORKCHOP, Material.ROTTEN_FLESH);
 		if(enableRCP.recipeEnabled("Zombie Villager"))SpawnerRC.MobRecipes("zombieVillagerKey", EntityType.ZOMBIE_VILLAGER, "Zombie Villager", Material.EMERALD, Material.ROTTEN_FLESH, Material.EMERALD, Material.EMERALD, Material.ROTTEN_FLESH);
-		/*if(enableRCP.recipeEnabled("pig"))SpawnerRC.MobRecipes("pigKey", EntityType.PIG, "Pig", Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP);
-		if(enableRCP.recipeEnabled("pig"))SpawnerRC.MobRecipes("pigKey", EntityType.PIG, "Pig", Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP);
-		if(enableRCP.recipeEnabled("pig"))SpawnerRC.MobRecipes("pigKey", EntityType.PIG, "Pig", Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP);
-		if(enableRCP.recipeEnabled("pig"))SpawnerRC.MobRecipes("pigKey", EntityType.PIG, "Pig", Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP);
-		*/
+		if(enableRCP.recipeEnabled("Blaze"))SpawnerRC.MobRecipes("blazeKey", EntityType.BLAZE, "Blaze", Material.BLAZE_ROD, Material.BLAZE_POWDER, Material.BLAZE_ROD, Material.BLAZE_ROD, Material.BLAZE_POWDER);
+		if(enableRCP.recipeEnabled("Creeper"))SpawnerRC.MobRecipes("creeperKey", EntityType.CREEPER, "Creeper", Material.GUNPOWDER, Material.TNT, Material.GUNPOWDER, Material.GUNPOWDER, Material.TNT);
+		if(enableRCP.recipeEnabled("Elder Guardian"))SpawnerRC.MobRecipes("elderGuardianKey", EntityType.ELDER_GUARDIAN, "Elder Guardian", Material.PRISMARINE_SHARD, Material.SPONGE, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.SPONGE);
+		if(enableRCP.recipeEnabled("Guardian"))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled("Ghast"))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled("Magma Cube"))SpawnerRC.MobRecipes("magmaCubeKey", EntityType.MAGMA_CUBE, "Magma Cube", Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM);
+		if(enableRCP.recipeEnabled("Silverfish"))SpawnerRC.MobRecipes("silverfishKey", EntityType.SILVERFISH, "Silverfish", Material.STONE, Material.IRON_INGOT, Material.STONE, Material.STONE, Material.IRON_INGOT);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("Key", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		
 	}
 }
