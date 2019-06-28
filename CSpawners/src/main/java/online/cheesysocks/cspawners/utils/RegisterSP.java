@@ -9,6 +9,8 @@ import online.cheesysocks.cspawners.spawnerRecipe.SpawnerRC;
 
 public class RegisterSP {
 	
+	
+	
 	public static void registerRecipes() {
 		if(enableRCP.recipeEnabled("Cow"))SpawnerRC.MobRecipes("cowKey", EntityType.COW, "Cow", Material.LEATHER, Material.BEEF, Material.LEATHER, Material.LEATHER, Material.BEEF);
 		if(enableRCP.recipeEnabled("Pig"))SpawnerRC.MobRecipes("pigKey", EntityType.PIG, "Pig", Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP, Material.PORKCHOP);
@@ -31,20 +33,35 @@ public class RegisterSP {
 		if(enableRCP.recipeEnabled("Zombie Villager"))SpawnerRC.MobRecipes("zombieVillagerKey", EntityType.ZOMBIE_VILLAGER, "Zombie Villager", Material.EMERALD, Material.ROTTEN_FLESH, Material.EMERALD, Material.EMERALD, Material.ROTTEN_FLESH);
 		if(enableRCP.recipeEnabled("Blaze"))SpawnerRC.MobRecipes("blazeKey", EntityType.BLAZE, "Blaze", Material.BLAZE_ROD, Material.BLAZE_POWDER, Material.BLAZE_ROD, Material.BLAZE_ROD, Material.BLAZE_POWDER);
 		if(enableRCP.recipeEnabled("Creeper"))SpawnerRC.MobRecipes("creeperKey", EntityType.CREEPER, "Creeper", Material.GUNPOWDER, Material.TNT, Material.GUNPOWDER, Material.GUNPOWDER, Material.TNT);
-		if(enableRCP.recipeEnabled("Elder Guardian"))SpawnerRC.MobRecipes("elderGuardianKey", EntityType.ELDER_GUARDIAN, "Elder Guardian", Material.PRISMARINE_SHARD, Material.SPONGE, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.SPONGE);
-		if(enableRCP.recipeEnabled("Guardian"))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled("Ghast"))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled("Elder Guardian"))SpawnerRC.MobRecipes("elderGuardianKey", EntityType.ELDER_GUARDIAN, "Elder Guardian", Material.PRISMARINE_CRYSTALS, Material.SPONGE, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.SPONGE);
+		if(enableRCP.recipeEnabled("Guardian"))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material., Material.);
+		if(enableRCP.recipeEnabled("Ghast"))SpawnerRC.MobRecipes("Key", EntityType.GHAST, "Ghast", Material.FIRE_CHARGE, Material.GHAST_TEAR, Material.GUNPOWDER, Material., Material.);
 		if(enableRCP.recipeEnabled("Magma Cube"))SpawnerRC.MobRecipes("magmaCubeKey", EntityType.MAGMA_CUBE, "Magma Cube", Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM, Material.MAGMA_CREAM);
 		if(enableRCP.recipeEnabled("Silverfish"))SpawnerRC.MobRecipes("silverfishKey", EntityType.SILVERFISH, "Silverfish", Material.STONE, Material.IRON_INGOT, Material.STONE, Material.STONE, Material.IRON_INGOT);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("Key", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType., "", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
-		if(enableRCP.recipeEnabled(""))SpawnerRC.MobRecipes("guardianKey", EntityType.GUARDIAN, "Guardian", Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_CRYSTALS, Material.PRISMARINE_SHARD);
+		if(enableRCP.recipeEnabled("Skeleton"))SpawnerRC.MobRecipes("skeletonKey", EntityType.SKELETON, "Skeleton", Material.BONE, Material.ARROW, Material.BONE, Material.BONE, Material.ARROW);
+		if(enableRCP.recipeEnabled("Slime"))SpawnerRC.MobRecipes("slimeKey", EntityType.SLIME, "Slime", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Witch"))SpawnerRC.MobRecipes("witchKey", EntityType.WITCH, "Witch", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Wither Skeleton"))SpawnerRC.MobRecipes("witherSkeletonKey", EntityType.WITHER_SKELETON, "Wither Skeleton", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Shulker"))SpawnerRC.MobRecipes("shulkerKey", EntityType.SHULKER, "Shulker", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Polar Bear"))SpawnerRC.MobRecipes("polarBearKey", EntityType.POLAR_BEAR, "Polar Bear", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Husk"))SpawnerRC.MobRecipes("huskKey", EntityType.HUSK, "Husk", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Stray"))SpawnerRC.MobRecipes("strayKey", EntityType.STRAY, "Stray", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Llama"))SpawnerRC.MobRecipes("llamaKey", EntityType.LLAMA, "Llama", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Evoker"))SpawnerRC.MobRecipes("evokerKey", EntityType.EVOKER, "Evoker", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Vex"))SpawnerRC.MobRecipes("vexKey", EntityType.VEX, "Vex", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Vindicator"))SpawnerRC.MobRecipes("vindicatorKey", EntityType.VINDICATOR, "Vindicator", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Parrot"))SpawnerRC.MobRecipes("parrotKey", EntityType.PARROT, "Parrot", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Illusioner"))SpawnerRC.MobRecipes("illusionerKey", EntityType.ILLUSIONER, "Illusioner", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Cod"))SpawnerRC.MobRecipes("codKey", EntityType.COD, "Cod", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Salmon"))SpawnerRC.MobRecipes("salmonKey", EntityType.SALMON, "Salmon", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Turtle"))SpawnerRC.MobRecipes("turtleKey", EntityType.TURTLE, "Turtle", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Drowned"))SpawnerRC.MobRecipes("drownedKey", EntityType.DROWNED, "Drowned", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Phantom"))SpawnerRC.MobRecipes("phantomKey", EntityType.PHANTOM, "Phantom", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Pillager"))SpawnerRC.MobRecipes("pillagerKey", EntityType.PILLAGER, "Pillager", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Ravenger"))SpawnerRC.MobRecipes("ravengerKey", EntityType.RAVENGER, "Ravenger", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Fox"))SpawnerRC.MobRecipes("foxKey", EntityType.FOX, "Fox", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Cat"))SpawnerRC.MobRecipes("catKey", EntityType.CAT, "Cat", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Panda"))SpawnerRC.MobRecipes("pandaKey", EntityType.PANDA, "Panda", Material., Material., Material., Material., Material.);
 		
 	}
 }
