@@ -9,7 +9,12 @@ import online.cheesysocks.cspawners.spawnerRecipe.SpawnerRC;
 
 public class RegisterSP {
 	
-	
+	static boolean point9 = Bukkit.getVersion().contains("1.9") || Bukkit.getVersion().contains("1.10") || Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.13")|| Bukkit.getVersion().contains("1.14");
+	static boolean point10 = Bukkit.getVersion().contains("1.10") || Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.13")|| Bukkit.getVersion().contains("1.14");
+	static boolean point11 = Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.13")|| Bukkit.getVersion().contains("1.14");
+	static boolean point12 = Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.13")|| Bukkit.getVersion().contains("1.14");
+	static boolean point13 = Bukkit.getVersion().contains("1.13")|| Bukkit.getVersion().contains("1.14");
+	static boolean point14 = Bukkit.getVersion().contains("1.14");
 	
 	public static void registerRecipes() {
 		if(enableRCP.recipeEnabled("Cow"))SpawnerRC.MobRecipes("cowKey", EntityType.COW, "Cow", Material.LEATHER, Material.BEEF, Material.LEATHER, Material.LEATHER, Material.BEEF);
@@ -17,7 +22,7 @@ public class RegisterSP {
 		if(enableRCP.recipeEnabled("Sheep"))SpawnerRC.MobRecipes("sheepKey", EntityType.SHEEP, "Sheep", Material.MUTTON, Material.WHITE_WOOL, Material.MUTTON, Material.WHITE_WOOL, Material.MUTTON);
 		if(enableRCP.recipeEnabled("Chicken"))SpawnerRC.MobRecipes("chickenKey", EntityType.CHICKEN, "Chicken", Material.CHICKEN, Material.FEATHER, Material.CHICKEN, Material.CHICKEN, Material.FEATHER);
 		if(enableRCP.recipeEnabled("Mooshroom"))SpawnerRC.MobRecipes("mooshroomKey", EntityType.MUSHROOM_COW, "Mooshroom", Material.BROWN_MUSHROOM, Material.BEEF, Material.RED_MUSHROOM, Material.BROWN_MUSHROOM, Material.RED_MUSHROOM);
-		if(enableRCP.recipeEnabled("Dolphin") && (Bukkit.getVersion().contains("1.13") || Bukkit.getVersion().contains("1.14")))SpawnerRC.MobRecipes("dolphinKey", EntityType.DOLPHIN, "Dolphin", Material.SALMON, Material.COD, Material.SALMON, Material.COD, Material.SALMON);
+		if(enableRCP.recipeEnabled("Dolphin") && point14)SpawnerRC.MobRecipes("dolphinKey", EntityType.DOLPHIN, "Dolphin", Material.SALMON, Material.COD, Material.SALMON, Material.COD, Material.SALMON);
 		if(enableRCP.recipeEnabled("Rabbit"))SpawnerRC.MobRecipes("rabbitKey", EntityType.RABBIT, "Rabbit", Material.RABBIT, Material.RABBIT_HIDE, Material.RABBIT, Material.RABBIT, Material.RABBIT_HIDE);
 		if(enableRCP.recipeEnabled("Squid"))SpawnerRC.MobRecipes("squidKey", EntityType.SQUID, "Squid", Material.INK_SAC, Material.INK_SAC, Material.INK_SAC, Material.INK_SAC, Material.INK_SAC);
 		if(enableRCP.recipeEnabled("Donkey"))SpawnerRC.MobRecipes("donkeyKey", EntityType.DONKEY, "Donkey", Material.LEATHER, Material.CHEST, Material.SADDLE, Material.CHEST, Material.SADDLE);
@@ -42,26 +47,26 @@ public class RegisterSP {
 		if(enableRCP.recipeEnabled("Slime"))SpawnerRC.MobRecipes("slimeKey", EntityType.SLIME, "Slime", Material.SLIME_BLOCK, Material.SLIME_BALL, Material.SLIME_BLOCK, Material.SLIME_BLOCK, Material.SLIME_BALL);
 		if(enableRCP.recipeEnabled("Witch"))SpawnerRC.MobRecipes("witchKey", EntityType.WITCH, "Witch", Material.GLASS_BOTTLE, Material.GLOWSTONE_DUST, Material.SUGAR, Material.GLASS_BOTTLE, Material.GLOWSTONE_DUST);
 		if(enableRCP.recipeEnabled("Wither Skeleton"))SpawnerRC.MobRecipes("witherSkeletonKey", EntityType.WITHER_SKELETON, "Wither Skeleton", Material.WITHER_SKELETON_SKULL, Material.BONE, Material.WITHER_SKELETON_SKULL, Material.BONE, Material.WITHER_SKELETON_SKULL);
-		if(enableRCP.recipeEnabled("Shulker"))SpawnerRC.MobRecipes("shulkerKey", EntityType.SHULKER, "Shulker", Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL);
-		if(enableRCP.recipeEnabled("Polar Bear"))SpawnerRC.MobRecipes("polarBearKey", EntityType.POLAR_BEAR, "Polar Bear", Material.SNOW_BLOCK, Material.SALMON, Material.COD, Material.SNOW, Material.SALMON);
-		if(enableRCP.recipeEnabled("Husk"))SpawnerRC.MobRecipes("huskKey", EntityType.HUSK, "Husk", Material.CARROT, Material.ROTTEN_FLESH, Material.POTATO, Material.ROTTEN_FLESH, Material.IRON_INGOT);
-		if(enableRCP.recipeEnabled("Stray"))SpawnerRC.MobRecipes("strayKey", EntityType.STRAY, "Stray", Material.BONE, Material.BOW, Material.ARROW, Material.BOW, Material.BONE);
-		if(enableRCP.recipeEnabled("Llama"))SpawnerRC.MobRecipes("llamaKey", EntityType.LLAMA, "Llama", Material.RED_CARPET, Material.LEATHER, Material.CHEST, Material.CHEST, Material.RED_CARPET);
-		if(enableRCP.recipeEnabled("Evoker"))SpawnerRC.MobRecipes("evokerKey", EntityType.EVOKER, "Evoker", Material.EMERALD, Material.TOTEM_OF_UNDYING, Material.EMERALD, Material.EMERALD, Material.TOTEM_OF_UNDYING);
-		if(enableRCP.recipeEnabled("Vex"))SpawnerRC.MobRecipes("vexKey", EntityType.VEX, "Vex", Material.IRON_SWORD, Material.EMERALD, Material.IRON_SWORD, Material.EMERALD, Material.IRON_SWORD);
-		if(enableRCP.recipeEnabled("Vindicator"))SpawnerRC.MobRecipes("vindicatorKey", EntityType.VINDICATOR, "Vindicator", Material.EMERALD, Material.IRON_AXE, Material.EMERALD, Material.EMERALD, Material.IRON_AXE);
-		if(enableRCP.recipeEnabled("Parrot"))SpawnerRC.MobRecipes("parrotKey", EntityType.PARROT, "Parrot", Material.FEATHER, Material.FEATHER, Material.FEATHER, Material.FEATHER, Material.FEATHER);
-		if(enableRCP.recipeEnabled("Illusioner"))SpawnerRC.MobRecipes("illusionerKey", EntityType.ILLUSIONER, "Illusioner", Material.BOW, Material.BOW, Material.BOW, Material.BOW, Material.BOW);
-		if(enableRCP.recipeEnabled("Cod"))SpawnerRC.MobRecipes("codKey", EntityType.COD, "Cod", Material.COD, Material.COD, Material.COOKED_COD, Material.COD, Material.COOKED_COD);
-		if(enableRCP.recipeEnabled("Salmon"))SpawnerRC.MobRecipes("salmonKey", EntityType.SALMON, "Salmon", Material.SALMON, Material.COOKED_SALMON, Material.SALMON, Material.SALMON, Material.COOKED_SALMON);
-		if(enableRCP.recipeEnabled("Turtle"))SpawnerRC.MobRecipes("turtleKey", EntityType.TURTLE, "Turtle", Material.SEAGRASS, Material.TURTLE_EGG, Material.SEAGRASS, Material.SEAGRASS, Material.TURTLE_EGG);
-		if(enableRCP.recipeEnabled("Drowned"))SpawnerRC.MobRecipes("drownedKey", EntityType.DROWNED, "Drowned", Material., Material., Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Phantom"))SpawnerRC.MobRecipes("phantomKey", EntityType.PHANTOM, "Phantom", Material., Material., Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Pillager"))SpawnerRC.MobRecipes("pillagerKey", EntityType.PILLAGER, "Pillager", Material., Material., Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Ravenger"))SpawnerRC.MobRecipes("ravengerKey", EntityType.RAVENGER, "Ravenger", Material., Material., Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Fox"))SpawnerRC.MobRecipes("foxKey", EntityType.FOX, "Fox", Material., Material., Material., Material., Material.);
+		if(enableRCP.recipeEnabled("Shulker") && point9)SpawnerRC.MobRecipes("shulkerKey", EntityType.SHULKER, "Shulker", Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL, Material.SHULKER_SHELL);
+		if(enableRCP.recipeEnabled("Polar Bear") && point10)SpawnerRC.MobRecipes("polarBearKey", EntityType.POLAR_BEAR, "Polar Bear", Material.SNOW_BLOCK, Material.SALMON, Material.COD, Material.SNOW_BLOCK, Material.SALMON);
+		if(enableRCP.recipeEnabled("Husk") && point10)SpawnerRC.MobRecipes("huskKey", EntityType.HUSK, "Husk", Material.CARROT, Material.ROTTEN_FLESH, Material.POTATO, Material.ROTTEN_FLESH, Material.IRON_INGOT);
+		if(enableRCP.recipeEnabled("Stray") && point10)SpawnerRC.MobRecipes("strayKey", EntityType.STRAY, "Stray", Material.BONE, Material.BOW, Material.ARROW, Material.BOW, Material.BONE);
+		if(enableRCP.recipeEnabled("Llama") && point11)SpawnerRC.MobRecipes("llamaKey", EntityType.LLAMA, "Llama", Material.RED_CARPET, Material.LEATHER, Material.CHEST, Material.CHEST, Material.RED_CARPET);
+		if(enableRCP.recipeEnabled("Evoker") && point11)SpawnerRC.MobRecipes("evokerKey", EntityType.EVOKER, "Evoker", Material.EMERALD, Material.TOTEM_OF_UNDYING, Material.EMERALD, Material.EMERALD, Material.TOTEM_OF_UNDYING);
+		if(enableRCP.recipeEnabled("Vex") && point11)SpawnerRC.MobRecipes("vexKey", EntityType.VEX, "Vex", Material.IRON_SWORD, Material.EMERALD, Material.IRON_SWORD, Material.EMERALD, Material.IRON_SWORD);
+		if(enableRCP.recipeEnabled("Vindicator") && point11)SpawnerRC.MobRecipes("vindicatorKey", EntityType.VINDICATOR, "Vindicator", Material.EMERALD, Material.IRON_AXE, Material.EMERALD, Material.EMERALD, Material.IRON_AXE);
+		if(enableRCP.recipeEnabled("Parrot") && point12)SpawnerRC.MobRecipes("parrotKey", EntityType.PARROT, "Parrot", Material.FEATHER, Material.FEATHER, Material.FEATHER, Material.FEATHER, Material.FEATHER);
+		if(enableRCP.recipeEnabled("Illusioner") && point12)SpawnerRC.MobRecipes("illusionerKey", EntityType.ILLUSIONER, "Illusioner", Material.BOW, Material.BOW, Material.BOW, Material.BOW, Material.BOW);
+		if(enableRCP.recipeEnabled("Cod") && point13)SpawnerRC.MobRecipes("codKey", EntityType.COD, "Cod", Material.COD, Material.COD, Material.COOKED_COD, Material.COD, Material.COOKED_COD);
+		if(enableRCP.recipeEnabled("Salmon") && point13)SpawnerRC.MobRecipes("salmonKey", EntityType.SALMON, "Salmon", Material.SALMON, Material.COOKED_SALMON, Material.SALMON, Material.SALMON, Material.COOKED_SALMON);
+		if(enableRCP.recipeEnabled("Turtle") && point13)SpawnerRC.MobRecipes("turtleKey", EntityType.TURTLE, "Turtle", Material.SEAGRASS, Material.TURTLE_EGG, Material.SEAGRASS, Material.SEAGRASS, Material.TURTLE_EGG);
+		if(enableRCP.recipeEnabled("Drowned") && point13)SpawnerRC.MobRecipes("drownedKey", EntityType.DROWNED, "Drowned", Material.ROTTEN_FLESH, Material.TRIDENT, Material.ROTTEN_FLESH, Material.TRIDENT, Material.ROTTEN_FLESH);
+		if(enableRCP.recipeEnabled("Phantom") && point13)SpawnerRC.MobRecipes("phantomKey", EntityType.PHANTOM, "Phantom", Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE);
+		/*if(enableRCP.recipeEnabled("Pillager"))SpawnerRC.MobRecipes("pillagerKey", EntityType.PILLAGER, "Pillager", Material.EMERALD, Material.BOW, Material.EMERALD, Material.EMERALD, Material.BOW);
+		if(enableRCP.recipeEnabled("Ravenger"))SpawnerRC.MobRecipes("ravengerKey", EntityType.RAVENGER, "Ravenger", Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE);
+		if(enableRCP.recipeEnabled("Fox"))SpawnerRC.MobRecipes("foxKey", EntityType.FOX, "Fox", Material.EMERALD, Material.RABBIT_FOOT, Material., Material., Material.);
 		if(enableRCP.recipeEnabled("Cat"))SpawnerRC.MobRecipes("catKey", EntityType.CAT, "Cat", Material., Material., Material., Material., Material.);
 		if(enableRCP.recipeEnabled("Panda"))SpawnerRC.MobRecipes("pandaKey", EntityType.PANDA, "Panda", Material., Material., Material., Material., Material.);
-		
+		*/
 	}
 }

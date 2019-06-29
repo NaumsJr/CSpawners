@@ -1,5 +1,6 @@
 package online.cheesysocks.cspawners;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -22,6 +23,7 @@ public class CraftableSpawners extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new EventsClass(), this);
 		loadConfig();
 		RegisterSP.registerRecipes();
+		getServer().getConsoleSender().sendMessage(Bukkit.getVersion());
 	}
 	
 	@Override
