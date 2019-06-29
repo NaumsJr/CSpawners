@@ -1,4 +1,5 @@
-# CSpawners v1.0.00-alpha-C
+# CSpawners v1.0.00-alpha-C - Almost ready to release
+
 Repo for CSpawner Plugin by NaumsJr
 
 Currently in Development Stage.
