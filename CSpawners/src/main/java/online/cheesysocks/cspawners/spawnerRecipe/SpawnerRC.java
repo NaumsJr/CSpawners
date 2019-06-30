@@ -6,6 +6,7 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.Plugin;
+import org.mineacademy.remain.model.CompMaterial;
 
 import online.cheesysocks.cspawners.CraftableSpawners;
 import online.cheesysocks.cspawners.items.CreateSpawners;
@@ -14,7 +15,7 @@ public class SpawnerRC{
 	
 	private static Plugin plugin = CraftableSpawners.getPlugin(CraftableSpawners.class);
 	
-	public static void MobRecipes(String keyName, EntityType et, String spawnerName, Material mA, Material mB, Material mC, Material mAA, Material mCA) {
+	public static void MobRecipes(String keyName, EntityType et, String spawnerName, Material material, Material material2, Material material3, Material material4, Material material5) {
 		NamespacedKey mobKey = new NamespacedKey(plugin, keyName);
 		ShapedRecipe cSR = new ShapedRecipe(mobKey, CreateSpawners.createSpawner(et, spawnerName)); 
 		boolean advancedCraftingEnabled = plugin.getConfig().getBoolean("Advanced Crafting");
@@ -24,22 +25,22 @@ public class SpawnerRC{
 					"IEI",
 					"ANC",
 					"IEI");
-			cSR.setIngredient('A', mAA);
-			cSR.setIngredient('C', mCA);
-			cSR.setIngredient('N', Material.NETHER_STAR);
-			cSR.setIngredient('E', Material.END_STONE);
-			cSR.setIngredient('I', Material.IRON_BLOCK);
+			cSR.setIngredient('A', material4);
+			cSR.setIngredient('C', material5);
+			cSR.setIngredient('N', CompMaterial.NETHER_STAR.getMaterial());
+			cSR.setIngredient('E', CompMaterial.END_STONE.getMaterial());
+			cSR.setIngredient('I', CompMaterial.IRON_BLOCK.getMaterial());
 		}
 		if(!advancedCraftingEnabled) {
 			cSR.shape(
 					"IEI",
 					"ABC",
 					"IEI");
-			cSR.setIngredient('A', mA);
-			cSR.setIngredient('B', mB);
-			cSR.setIngredient('C', mC);
-			cSR.setIngredient('E', Material.END_STONE);
-			cSR.setIngredient('I', Material.IRON_BLOCK);
+			cSR.setIngredient('A', material);
+			cSR.setIngredient('B', material2);
+			cSR.setIngredient('C', material3);
+			cSR.setIngredient('E', CompMaterial.END_STONE.getMaterial());
+			cSR.setIngredient('I', CompMaterial.IRON_BLOCK.getMaterial());
 		}
 
 		
