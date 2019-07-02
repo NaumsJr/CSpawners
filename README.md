@@ -1,4 +1,5 @@
 # CSpawners v1.0.00-alpha-C - Almost ready to release
+[![Get help and Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/VyntgYz)
 
 Repo for CSpawner Plugin by NaumsJr
 
