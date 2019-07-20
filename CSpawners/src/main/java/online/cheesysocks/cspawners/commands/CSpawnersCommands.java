@@ -7,11 +7,13 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.defaults.BukkitCommand;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 import online.cheesysocks.cspawners.CraftableSpawners;
+import online.cheesysocks.cspawners.items.CreateSpawners;
 import online.cheesysocks.cspawners.utils.Common;
 
 
@@ -42,7 +44,7 @@ public class CSpawnersCommands extends BukkitCommand {
 			
 			else if (args.length != 1 && player.hasPermission("CSpawners.test")) {
 				//Common.tell(sender, "&cPlease type your name after the command!");
-				Common.tell(sender, "&aCongrats you have just recieved a Creeper Spawner!");
+				
 				//CreateSpawners.getSpawner(player, EntityType.CREEPER, "Creeper");
 				
 				return false;
@@ -53,11 +55,20 @@ public class CSpawnersCommands extends BukkitCommand {
 				return false;
 			}
 			
-			final String name = args[0];
-			Common.tell(sender, "&6Hello " + name + "&6 welcome to the server!");
+			final String spawnerType = args[0];
+			EntityType type = null;
+			 
+			try{
+			    type = EntityType.valueOf(spawnerType);
+			}catch(IllegalArgumentException exp){
+				Common.tell(sender, "&cSorry this is not a valid Mob Type!");
+				return false;
+			}
 			
-	
-			player.getInventory().addItem(new ItemStack(Material.DIAMOND, 2));
+			Common.tell(sender, "&aCongrats you have just recieved a " + spawnerType + " Spawner!");
+			CreateSpawners.createSpawner(EntityType.valueOf(spawnerType), spawnerType.substring(0, 1).toUpperCase() + spawnerType.substring(1));
+			
+			
 			
 			return true;
 		}
