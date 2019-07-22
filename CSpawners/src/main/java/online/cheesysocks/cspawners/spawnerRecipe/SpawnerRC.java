@@ -6,7 +6,6 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.Plugin;
-import org.mineacademy.remain.model.CompMaterial;
 
 import online.cheesysocks.cspawners.CraftableSpawners;
 import online.cheesysocks.cspawners.items.CreateSpawners;
@@ -27,9 +26,9 @@ public class SpawnerRC{
 					"IEI");
 			cSR.setIngredient('A', material4);
 			cSR.setIngredient('C', material5);
-			cSR.setIngredient('N', CompMaterial.NETHER_STAR.getMaterial());
-			cSR.setIngredient('E', CompMaterial.END_STONE.getMaterial());
-			cSR.setIngredient('I', CompMaterial.IRON_BLOCK.getMaterial());
+			cSR.setIngredient('N', Material.NETHER_STAR);
+			cSR.setIngredient('E', Material.END_STONE);
+			cSR.setIngredient('I', Material.IRON_BLOCK);
 		}
 		if(!advancedCraftingEnabled) {
 			cSR.shape(
@@ -39,8 +38,8 @@ public class SpawnerRC{
 			cSR.setIngredient('A', material);
 			cSR.setIngredient('B', material2);
 			cSR.setIngredient('C', material3);
-			cSR.setIngredient('E', CompMaterial.END_STONE.getMaterial());
-			cSR.setIngredient('I', CompMaterial.IRON_BLOCK.getMaterial());
+			cSR.setIngredient('E', Material.END_STONE);
+			cSR.setIngredient('I', Material.IRON_BLOCK);
 		}
 
 		
