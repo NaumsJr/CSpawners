@@ -1,47 +1,76 @@
 Main Command Enabled: true
+###################################################
+#### This is the command to decide whether the ####
+#### harder or easier crafting recipe is used. ####
+###################################################
+
 Advanced Crafting: true
-Enable Cow Recipe: true
-Enable Pig Recipe: true
-Enable Sheep Recipe: true
-Enable Chicken Recipe: true
-Enable Rabbit Recipe: true
-Enable Squid Recipe: true
-Enable Mooshroom Recipe: true
-Enable Donkey Recipe: true
-Enable Horse Recipe: true
-Enable Dolphin Recipe: true
-Enable Ocelot Recipe: true
-Enable Wolf Recipe: true
-Enable Villager Recipe: true
-Enable Cave Spider Recipe: true
-Enable Enderman Recipe: true
-Enable Spider Recipe: true
-Enable Zombie Recipe: true
-Enable Zombie Pigman Recipe: true
-Enable Zombie Villager Recipe: true
-Enable Blaze Recipe: true
-Enable Creeper Recipe: true
-Enable Elder Guardian Recipe: true
-Enable Guardian Recipe: true
-Enable Ghast Recipe: true
-Enable Magma Cube Recipe: true
-Enable Silverfish Recipe: true
-Enable Skeleton Recipe: true
-Enable Slime Recipe: true
-Enable Witch Recipe: true
-Enable Wither Skeleton Recipe: true
-Enable Shulker Recipe: true
-Enable Polar Bear Recipe: true
-Enable Husk Recipe: true
-Enable Stray Recipe: true
-Enable Llama Recipe: true
-Enable Evoker Recipe: true
-Enable Vex Recipe: true
-Enable Vindicator Recipe: true
-Enable Parrot Recipe: true
-Enable Illusioner Recipe: true
-Enable Cod Recipe: true
-Enable Salmon Recipe: true
-Enable Turtle Recipe: true
-Enable Drowned Recipe: true
-Enable Phantom Recipe: true
+
+###############################################
+#### Enable or Disable Certain Mob Recipes ####
+###############################################
+
+Enable Mob Types:
+  Enable Cow Recipe: true
+  Enable Pig Recipe: true
+  Enable Sheep Recipe: true
+  Enable Chicken Recipe: true
+  Enable Rabbit Recipe: true
+  Enable Squid Recipe: true
+  Enable Mooshroom Recipe: true
+  Enable Donkey Recipe: true
+  Enable Horse Recipe: true
+  Enable Dolphin Recipe: true
+  Enable Ocelot Recipe: true
+  Enable Wolf Recipe: true
+  Enable Villager Recipe: true
+  Enable Cave Spider Recipe: true
+  Enable Enderman Recipe: true
+  Enable Spider Recipe: true
+  Enable Zombie Recipe: true
+  Enable Zombie Pigman Recipe: true
+  Enable Zombie Villager Recipe: true
+  Enable Blaze Recipe: true
+  Enable Creeper Recipe: true
+  Enable Elder Guardian Recipe: true
+  Enable Guardian Recipe: true
+  Enable Ghast Recipe: true
+  Enable Magma Cube Recipe: true
+  Enable Silverfish Recipe: true
+  Enable Skeleton Recipe: true
+  Enable Slime Recipe: true
+  Enable Witch Recipe: true
+  Enable Wither Skeleton Recipe: true
+  Enable Shulker Recipe: true
+  Enable Polar Bear Recipe: true
+  Enable Husk Recipe: true
+  Enable Stray Recipe: true
+  Enable Llama Recipe: true
+  Enable Evoker Recipe: true
+  Enable Vex Recipe: true
+  Enable Vindicator Recipe: true
+  Enable Parrot Recipe: true
+  Enable Illusioner Recipe: true
+  Enable Cod Recipe: true
+  Enable Salmon Recipe: true
+  Enable Turtle Recipe: true
+  Enable Drowned Recipe: true
+  Enable Phantom Recipe: true
+########################################################
+#### Below are 1.14 Mobs Enabled by Default. If you #####
+#### are below 1.14 the recipe will not be enabled #####
+#### regardless of what value is put below         #####
+########################################################
+  Enable Pillager Recipe: true
+  Enable Ravenger Recipe: true
+  Enable Fox Recipe: true
+  Enable Cat Recipe: true
+  Enable Panda Recipe: true
+  
+  
+############################
+## DO NOT CHANGE THIS     ##
+## OR IT WILL POTENTIALLY ##
+## BREAK THE PLUGIN!      ##
+############################
+config-version: 0.0.3

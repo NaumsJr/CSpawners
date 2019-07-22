@@ -64,11 +64,11 @@ public class RegisterSP {
 		if(enableRCP.recipeEnabled("Turtle") && point13)SpawnerRC.MobRecipes("turtleKey", EntityType.TURTLE, "Turtle", Material.SEAGRASS, Material.TURTLE_EGG, Material.SEAGRASS, Material.SEAGRASS, Material.TURTLE_EGG);
 		if(enableRCP.recipeEnabled("Drowned") && point13)SpawnerRC.MobRecipes("drownedKey", EntityType.DROWNED, "Drowned", Material.ROTTEN_FLESH, Material.TRIDENT, Material.ROTTEN_FLESH, Material.TRIDENT, Material.ROTTEN_FLESH);
 		if(enableRCP.recipeEnabled("Phantom") && point13)SpawnerRC.MobRecipes("phantomKey", EntityType.PHANTOM, "Phantom", Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE, Material.PHANTOM_MEMBRANE);
-		/*if(enableRCP.recipeEnabled("Pillager"))SpawnerRC.MobRecipes("pillagerKey", EntityType.PILLAGER, "Pillager", Material.EMERALD, Material.BOW, Material.EMERALD, Material.EMERALD, Material.BOW);
-		if(enableRCP.recipeEnabled("Ravenger"))SpawnerRC.MobRecipes("ravengerKey", EntityType.RAVENGER, "Ravenger", Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE);
-		if(enableRCP.recipeEnabled("Fox"))SpawnerRC.MobRecipes("foxKey", EntityType.FOX, "Fox", Material.EMERALD, Material.RABBIT_FOOT, Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Cat"))SpawnerRC.MobRecipes("catKey", EntityType.CAT, "Cat", Material., Material., Material., Material., Material.);
-		if(enableRCP.recipeEnabled("Panda"))SpawnerRC.MobRecipes("pandaKey", EntityType.PANDA, "Panda", Material., Material., Material., Material., Material.);
-		*/
+		if(enableRCP.recipeEnabled("Pillager") && point13)SpawnerRC.MobRecipes("pillagerKey", EntityType.PILLAGER, "Pillager", Material.EMERALD, Material.BOW, Material.EMERALD, Material.EMERALD, Material.BOW);
+		if(enableRCP.recipeEnabled("Ravenger") && point13)SpawnerRC.MobRecipes("ravengerKey", EntityType.RAVAGER, "Ravenger", Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE, Material.SADDLE);
+		if(enableRCP.recipeEnabled("Fox") && point14)SpawnerRC.MobRecipes("foxKey", EntityType.FOX, "Fox", Material.EMERALD, Material.RABBIT_FOOT, Material.DIAMOND, Material.EMERALD, Material.RABBIT_FOOT);
+		if(enableRCP.recipeEnabled("Cat") && point14)SpawnerRC.MobRecipes("catKey", EntityType.CAT, "Cat", Material.EMERALD, Material.TROPICAL_FISH, Material.EMERALD, Material.EMERALD, Material.TROPICAL_FISH);
+		if(enableRCP.recipeEnabled("Panda") && point14)SpawnerRC.MobRecipes("pandaKey", EntityType.PANDA, "Panda", Material.BAMBOO, Material.CAKE, Material.BAMBOO, Material.BAMBOO, Material.CAKE);
+		
 	}
 }
