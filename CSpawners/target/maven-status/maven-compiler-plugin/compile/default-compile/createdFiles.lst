@@ -1,10 +1,11 @@
-online\cheesysocks\cspawners\commands\CSReloadCom.class
 online\cheesysocks\cspawners\spawnerRecipe\SpawnerRC.class
-online\cheesysocks\cspawners\utils\EventsClass.class
 online\cheesysocks\cspawners\CraftableSpawners.class
-online\cheesysocks\cspawners\items\CreateSpawners.class
 online\cheesysocks\cspawners\utils\enableRCP.class
 online\cheesysocks\cspawners\utils\RegisterSP.class
-online\cheesysocks\cspawners\commands\SpawnerCommand.class
 online\cheesysocks\cspawners\utils\Common.class
+online\cheesysocks\cspawners\commands\CSReloadCom.class
+online\cheesysocks\cspawners\utils\updateconf.class
+online\cheesysocks\cspawners\utils\EventsClass.class
+online\cheesysocks\cspawners\items\CreateSpawners.class
+online\cheesysocks\cspawners\commands\SpawnerCommand.class
 online\cheesysocks\cspawners\commands\CSpawnersCommands.class

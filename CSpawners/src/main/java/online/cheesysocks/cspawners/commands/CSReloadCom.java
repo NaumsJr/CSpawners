@@ -31,7 +31,9 @@ public class CSReloadCom extends BukkitCommand {
 			plugin.saveDefaultConfig();
 			plugin.getConfig().options().copyDefaults(true);
             Common.tell(sender, "&aSuccessfully Reloaded CSpawners' Config");
-            plugin.getServer().getConsoleSender().sendMessage(sender + "has reloaded CSpawners' config successfully!");
+            plugin.getServer().getConsoleSender().sendMessage(sender.getName() + "has reloaded CSpawners' config successfully!");
+            plugin.getServer().getConsoleSender().sendMessage("This has changed? " + plugin.getConfig().getString("Checking-config"));
+            return true;
 		}
 		
 		else if(!(player.hasPermission("CSpawners.admin"))) {
